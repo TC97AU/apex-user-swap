@@ -2,8 +2,13 @@ import shutil
 import time
 import sys
 
-pro_loc = "C:\\Users\\saman\\Saved Games\\Respawn\\Apex\\profile\\profile.cfg"
-set_loc = "C:\\Users\\saman\\Saved Games\\Respawn\\Apex\\local\\settings.cfg"
+# CHANGE PER SYSTEM
+
+pro_loc = "C:\\Users\\YOUR_USER\\Saved Games\\Respawn\\Apex\\profile\\profile.cfg"
+set_loc = "C:\\Users\\YOUR_USER\\Saved Games\\Respawn\\Apex\\local\\settings.cfg"
+
+player1 = "YOUR_PLAYER_1"
+player2 = "YOUR_PLAYER_2"
 
 # Check current user
 current_txt = open("current.txt", "r")
@@ -21,10 +26,10 @@ while True:
     if swp == "y":
         
         # Tell the program who next_user is
-        if current_user == "Ausszie":
-            next_user = "TC"
-        elif current_user == "TC":
-            next_user = "Ausszie"
+        if current_user == player1:
+            next_user = player2
+        elif current_user == player2:
+            next_user = player1
         else:
             print("Something went wrong...")
             time.sleep(2)
