@@ -12,6 +12,7 @@ Place profile.cfg and settings.cfg files into cfg_store for both users with the 
 - settings_john.cfg
 - profile_claire.cfg
 - settings_claire.cfg.
+
 Make sure the names you use are the same as the names you assigned in swap.py to player1 & player2.
 
 current.txt should start with the same name as player1.
